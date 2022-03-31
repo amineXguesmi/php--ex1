@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resa</title>
+<!-- CSS only -->
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container ">
+      <legend >formulaire</legend>
+      <form action="recap.php" method="post" class="box ">
+        <div class="row">
+            <p class="col-3 text-center">Nom</p>
+            <input type="text " class="col-3" name="nom">
+        </div>
+        <div class="row">
+            <p class="col-3 text-center">Prenom</p>
+            <input type="text" class="col-3" name="prenom">
+        </div>
+        <div class="row">
+            <p class="col-3 text-center">CIN</p>
+            <input type="number" class="col-3" name="cin" maxlength="8">
+        </div>
+        <div class="row">
+            <p class="col-3 text-center">Nombre sandwitch</p>
+            <input type="number" class="col-3" name="nbre">
+        </div>
+        <div class="row">
+            <p class="col-3 text-center">Adresse</p>
+            <textarea name="adresse" rows="2" class="col-3"></textarea>
+        </div>
+        <div class="row">
+            <p class="col-3 text-center">Type sandwitch</p>
+            <select class="col-3" name="type">
+                <option class="text-center" >viande</option>
+                <option class="text-center">poulet</option>
+                <option class="text-center">escalope</option>
+            </select>
+        </div>
+        <div class="row">
+            <p class="col-3 text-center">ingrédient à ajouter</p>
+            <div class="col-6 row">
+               <div class="col-2">
+                <input type="checkbox" name="harisa" class="form-check-input" checked>
+                <label for="harisa" class="form-check-label ">harisa</label>
+              </div>
+              
+              <div class="col-2">
+                <input type="checkbox" name="salade" class="form-check-input">
+                <label for="salade" class="form-check-label">salade</label>
+              </div>
+              <div class="col-2 ">
+                <input type="checkbox" name="mayo" class="form-check-input" >
+                <label for="mayo" class="form-check-label">mayo</label>
+              </div>
+            </div>
+        </div> 
+          <div class="row">
+              <span class="col-2"></span>
+              <button type="submit" class="col-1 " >submit</button>
+              <button type="reset" class="col-1" >reset</button>
+          </div>
+        
+      </form> 
+      <div class="row">
+          <img src="1.jpg" class="col-3 img-fluid " >
+         <img src="2.jpg"  class="col-3  img-fluid">
+          <img src="3.jpg"  class="col-3 img-fluid">
+          <img src="4.jpg"  class="col-3 img-fluid">
+      </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>
